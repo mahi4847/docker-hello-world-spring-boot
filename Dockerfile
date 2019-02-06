@@ -1,5 +1,7 @@
 #pull base image	
 FROM openjdk:8-jdk-alpine
+WORKDIR /usr/src/app
+COPY . ./
 #expose port 8080	
 EXPOSE 8080
 
